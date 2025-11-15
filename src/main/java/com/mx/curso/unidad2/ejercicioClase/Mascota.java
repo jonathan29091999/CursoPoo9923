@@ -29,4 +29,8 @@ public class Mascota
     public void setEdadMascota(int edadMascota) {
         this.edadMascota = edadMascota;
     }
+
+
+
+
 }

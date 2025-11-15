@@ -14,5 +14,9 @@ public class Main {
         System.out.println("El nombre de la mascota es "+mascota.getNombreMascota());
         System.out.println("la mascota tiene "+mascota.getEdadMascota()+" años");
 
+
+
+
+
     }
 }
