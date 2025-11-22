@@ -23,6 +23,10 @@ public class ManejoDeCiclos
         for (int k=1; k<10; k++){
             System.out.println("la tabla del numero 7 es: "+(7*k));
         }
+
+
+
+
     }
 
 
