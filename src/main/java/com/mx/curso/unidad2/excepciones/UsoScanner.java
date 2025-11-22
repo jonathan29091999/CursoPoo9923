@@ -11,7 +11,8 @@ public class UsoScanner {
         try{
             int dato = scanner.nextInt();
         }catch (IllegalStateException e){
-            System.out.println("no es posible leer porque el scanner ya esta cerrado");
+            System.out.println("no es posible leer porque el scanner ya esta cerrado "
+                    +e.getMessage());
         }
     }
 
