@@ -1,8 +1,12 @@
 package com.mx.curso.unidad1.herencia;
 
-public class Persona {
+public class Persona2 {
+
     private String nombre;
     private int edad;
+
+
+
 
     public String getNombre() {
         return nombre;

@@ -5,7 +5,7 @@ public class Main {
 
         //objeto de tipo persona
         System.out.println("OBJETO DE LA CLASE PERSONA");
-        Persona persona = new Persona();
+        Persona2 persona = new Persona2();
         persona.setNombre("jonathan");
 
         System.out.println("Nombre: "+persona.getNombre());
