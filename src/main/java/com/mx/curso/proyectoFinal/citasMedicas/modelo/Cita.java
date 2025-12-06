@@ -10,10 +10,13 @@ public class Cita {
 
 
     public Cita(LocalDateTime fechaHoraInicio, String id, EstadoCita estado) {
-        FechaHoraInicio = fechaHoraInicio;
+        this.FechaHoraInicio = fechaHoraInicio;
         this.id = id;
         this.estado = estado;
+
     }
+
+
 
     public void reservar(){
         this.estado = EstadoCita.AGENDADA;
@@ -21,7 +24,6 @@ public class Cita {
 
     public void liberar(){
         this.estado = EstadoCita.CANCELADA;
-        this.estado = EstadoCita.COMPLETADA;
     }
 
     public LocalDateTime getFechaHoraInicio() {
