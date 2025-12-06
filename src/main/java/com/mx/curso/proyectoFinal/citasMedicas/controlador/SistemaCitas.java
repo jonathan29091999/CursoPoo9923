@@ -30,8 +30,19 @@ public class SistemaCitas {
 
     }
 
-    public void buscarMedicoPorEspecialidad(){
-
+    public void buscarMedicoPorEspecialidad(String especialidad){
+      if(especialidad.equals("cardiologia")){
+          return medicos.get(EstadoHorario);
+      }else {
+          if(especialidad.equals("pediatria")){
+              return medicos.get(EstadoHorario);
+          }
+          else{
+              if(especialidad.equals("traumatologia")){
+                  return medicos.get(EstadoHorario);
+              }
+          }
+      }
     }
 
 

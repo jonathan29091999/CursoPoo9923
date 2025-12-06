@@ -26,6 +26,10 @@ public class Medico extends Persona{
         this.setEspecialidad(especialidad);
     }
 
+    public Medico(String drJuanPerez, String number, List<Especialidad> cardiologia) {
+        super();
+    }
+
     public List<Especialidad> getEspecialidad() {
         return especialidad;
     }
