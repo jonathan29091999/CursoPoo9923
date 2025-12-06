@@ -1,5 +1,7 @@
 package com.mx.curso.proyectoFinal.citasMedicas.modelo;
 
+import com.sun.management.HotSpotDiagnosticMXBean;
+
 import java.util.List;
 
 public class Medico extends Persona{
@@ -17,7 +19,8 @@ public class Medico extends Persona{
 
     }
 
-    public Medico( String nombre, String id, List<Especialidad> especialidad) {
+    public Medico( String nombre, String id,
+                   List<Especialidad> especialidad, List<Horario> horariosDisponibles) {
         this.setNombre(nombre);
         this.setID(id);
         this.setEspecialidad(especialidad);
@@ -46,6 +49,8 @@ public class Medico extends Persona{
    public  void definirDisponibilidad(){
 
    }
+
+
 
    public void agregarMedicoEspecialidad(Especialidad e){
         especialidad.add(e);

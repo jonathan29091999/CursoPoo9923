@@ -3,7 +3,6 @@ package com.mx.curso.proyectoFinal.citasMedicas.controlador;
 import com.mx.curso.proyectoFinal.citasMedicas.modelo.*;
 
 import java.time.LocalDateTime;
-import java.util.EmptyStackException;
 import java.util.List;
 
 public class SistemaCitas {
@@ -27,7 +26,7 @@ public class SistemaCitas {
     }
 
     public void cancelarCita(){
-        Cita cita = new Cita();
+
 
     }
 
@@ -50,9 +49,12 @@ public class SistemaCitas {
         traumatologo.registraEspecialidad("traumatologia", "trata de lesiones musculares");
 
 
-        medicos.add(new Medico("Dr Juan Perez", "001", (List<Especialidad>) cardiologia));
-        medicos.add(new Medico("Dra Ana Lopez","002", (List<Especialidad>) pediatria));
-        medicos.add(new Medico("Dra Ana Lopez","002", (List<Especialidad>) traumatologo));
+        medicos.add(new Medico("Dr Juan Perez", "001", (List<Especialidad>) cardiologia),
+                new Horario(LocalDateTime.now(), EstadoHorario.DISPONIBLE);
+        medicos.add(new Medico("Dra Ana Lopez","002", (List<Especialidad>) pediatria),
+                new Horario(LocalDateTime.now(), EstadoHorario.RESERVADO);
+        medicos.add(new Medico("Dra Ana Lopez","002", (List<Especialidad>) traumatologo),
+                new Horario(LocalDateTime.now(), EstadoHorario.RESERVADO);
 
 
 
